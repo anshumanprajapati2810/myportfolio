@@ -81,6 +81,19 @@ html{
     margin: auto;
     border-radius: 100%;
 }
+.home .content-banner img:hover{
+   
+    animation: zoomAnimation 1s infinite alternate ease-in-out;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+@keyframes zoomAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
 .home .content-banner h1{
     margin-top: 40px;
     font-size: 42px;
@@ -103,8 +116,18 @@ html{
     font-size: 20px;
     transition: .3s;
 }
-.home .content-banner .network a:hover{
-    background-color: #1CB698;
+.home .content-banner .network  .yt:hover{
+    background-color: #c90f0f;
+}
+.home .content-banner .network .ig:hover{
+    background-color: 
+    #b40fd1;
+}
+.home .content-banner .network .twt:hover{
+    background-color: #079cd7;
+}
+.home .content-banner .network .ldn:hover{
+    background-color: #151879;
 }
 .aboutme{
     background-color: #1e2326;
@@ -575,7 +598,7 @@ html{
     top: 40%;
     background-color: #252A2E;
     padding: 20px;
-    max-width: 350px;
+    max-width: 360px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -589,7 +612,10 @@ html{
     color: #1CB698;
     display: inline-block;
     margin-right: 20px;
-}
+ }
+.info{
+    width: 360px
+} 
 .error-message {
     color: red;
     font-size: 14px;
@@ -632,6 +658,22 @@ footer .arriba{
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
+}
+footer .network  .yt:hover{
+    background-color: #c90f0f;
+}
+footer .network .ig:hover{
+    background-color: 
+    #b40fd1;
+}
+footer .network .twt:hover{
+    background-color: #079cd7;
+}
+footer .network .ldn:hover{
+    background-color: #151879;
+}
+footer .network .mail:hover{
+    background-color: #ebc907;
 }
 /* section RESPONSIVE */
 @media screen and (max-width:980px){
