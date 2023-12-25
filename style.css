@@ -117,17 +117,17 @@ html{
     transition: .3s;
 }
 .home .content-banner .network  .yt:hover{
-    background-color: #c90f0f;
+    background-color: rgb(255, 0, 0);
 }
 .home .content-banner .network .ig:hover{
-    background-color: 
-    #b40fd1;
+    background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
 .home .content-banner .network .twt:hover{
-    background-color: #079cd7;
+    background-color: rgb(29, 161, 242);
 }
 .home .content-banner .network .ldn:hover{
-    background-color: #151879;
+    background-color: rgb(0, 119, 181);
 }
 .aboutme{
     background-color: #1e2326;
@@ -660,21 +660,22 @@ footer .arriba{
     font-size: 18px;
 }
 footer .network  .yt:hover{
-    background-color: #c90f0f;
+    background-color: rgb(255, 0, 0);
 }
 footer .network .ig:hover{
-    background-color: 
-    #b40fd1;
+    background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
 footer .network .twt:hover{
-    background-color: #079cd7;
+    background-color: rgb(29, 161, 242);
 }
 footer .network .ldn:hover{
-    background-color: #151879;
+    background-color: rgb(0, 119, 181);
 }
 footer .network .mail:hover{
-    background-color: #ebc907;
+    background-color: #fbbc05;
 }
+
 /* section RESPONSIVE */
 @media screen and (max-width:980px){
     nav{
