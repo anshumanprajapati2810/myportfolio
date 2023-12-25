@@ -1,45 +1,369 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-    <script src="script.js"></script>
+    <link id="themeStylesheet" rel="stylesheet" href="light-mode.css">
+    <link id="themeStylesheet" rel="stylesheet" href="dark-mode.css">
+
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Anshuman Prajapati</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#project">Project</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Anshuman Prajapati</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="togglemenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+    <!-- MENU -->
+    <div class="conatiner-header">
+        <header>
+            <div class="logo">
+                <a href="#">Anshuman Prajapti</a>
             </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="togglemenu()">About</a></li>
-                <li><a href="#experience" onclick="togglemenu()">Experience</a></li>
-                <li><a href="#project" onclick="togglemenu()">Project</a></li>
-                <li><a href="#contact" onclick="togglemenu()">Contact</a></li> 
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home" onclick="selection()">HOME</a></li>
+                    <li><a href="#aboutme" onclick="selection()">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="selection()">SKILLS</a></li>
+                    <li><a href="#education" onclick="selection()">EDUCATION</a></li>
+                    <li><a href="#portfolio" onclick="selection()">PROJECTS</a></li>
+                    <li><a href="#contact" onclick="selection()">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="showHiddenMenu()">
+                <i class="fa-solid fa-bars"></i>
             </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="" alt="">
+        </header>
+    </div>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="home">
+        <div class="content-banner">
+            <div class="conatiner-img">
+                <img src="./assets/Profile-pic.jpg" alt="">
+            </div>
+            <h1>ANSHUMAN PRAJAPATI</h1>
+            <h2>IT Engineer - Web Development Expert</h2>
+            <div class="network">
+            <a href="https://www.instagram.com/quantized.anshh/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/Anshuma66149166" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/anshuman-prajapati-442479261/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.youtube.com/@MysteryofMusic    " target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
         </div>
     </section>
+
+    <!-- section About me -->
+    <section id="aboutme" class="aboutme">
+        <div class="content-section">
+            <h2>About Me</h2>
+            <p><span>Hey, I'm Anshuman Prajapati! </span> seamlessly blending the world of technology with my passion for music composition as am also founder of  <a href="https://www.youtube.com/@MysteryofMusic"><b>Mystery of Music</b></a> i.e. Music Organization regarding music composition and piano covers of popular songs. It has been started in the year 2021.</p>
+            <p>Feel free to explore my portfolio and send me suggestion through messages😊</p>
+            <br>
+            <div class="row">
+                <!-- Personal Information -->
+                <div class="col">
+                    <h3>Personal Information</h3>
+                    <ul>
+                        <li>
+                            <strong>Birthday</strong>
+                            28-10-2004
+                        </li>
+                        <li>
+                            <strong>Contact</strong>
+                            +91 96645 96323
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            abdprajapati090@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            Under development
+                        </li>
+                        <li>
+                            <strong>Address</strong>
+                            Anand, Gujarat, India
+                        </li>
+                        <li>
+                            <strong>Post</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Interests -->
+                <div class="col">
+                    <h3>Interests</h3>
+                    <div class="conatiner-Interests">
+                        <div class="interest">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>GAMING</span>
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSIC</span>
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>TRAVELLING</span>
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-book"></i>
+                            <span>READING</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Download CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- section SKILLS -->
+    <section class="skills" id="skills">
+        <div class="content-section">
+            <h2>Skills</h2>
+            <div class="row">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>
+                            <i class="fa-brands fa-js"></i>
+                            Javascript
+                        </span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>71%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>
+                            <i class="fa-solid fa-code"></i>
+                            HTML & CSS
+                        </span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>84%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span><i class="fa-brands fa-java"></i>
+                        JAVA
+                        </span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Communication</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Teamwork</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creativity</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Project Management</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section education -->
+    <section id="education" class="education">
+        <div class="content-section">
+            <h2>EDUCATION</h2>
+            <div class="row">
+                <div class="col left">
+                    <h3>Education</h3>
+                    <div class="item left">
+                        <h4>SSC</h4>
+                        <span class="building">Jawahar Navodaya Vidyalaya, Mehsana</span>
+                        <span class="year">2020</span>
+                        <p>With passing marks of 91.6%</p>
+                        <div class="connector">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                    <div class="item left">
+                        <h4>HSC</h4>
+                        <span class="building">Jawahar Navodaya Vidyalaya, Mehsana</span>
+                        <span class="year">2022</span>
+                        <p>With passing marks of 92.8%</p>                        
+                        <div class="connector">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                    <div class="item left">
+                        <h4>Graduation</h4>
+                        <span class="building">Charotar University of Science And Technology, Changa</span>
+                        <span class="year">2022 -</span>
+                        <p>Currently pusruing my degree in B.Tech (Information Technology)<p>                        <div class="connector">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col right">
+                    <h3>Work Experience</h3>
+                    <div class="item right">
+                        <h4>Frontend Developer</h4>
+                        <span class="building">Free lancer</span>
+                        <span class="year">2023</span>
+                        <p>Started my Web development journey alongside with my brother this year</p>                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item right">
+                        <h4>Graphic Designer</h4>
+                        <span class="building">Free lancer</span>
+                        <span class="year">2023</span>
+                        <p>Designed logos for multiple clients with satisfactory work.</p>                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item right">
+                        <h4>Video Editor</h4>
+                        <span class="building">Phantom Creations</span>
+                        <span class="year">2020-</span>
+                        <p>Editing videos and thumbnails for YouTube channel of "Phantom Creations". Started journey with tem during pandemic</p>                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="content-section">
+            <h2>PROJECTS</h2>
+            <div class="gallery">
+                <div class="project">
+                    <img src="./assets/weather.png" alt="">
+                    <div class="overlay">
+                        <h3>Weather Web App</h3>
+                        <p>Weather search app</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section contact -->
+    <section id="contact" class="contact">
+        <div class="content-section">
+            <h2>CONTACT</h2>
+            <div class="row" id="contact-form">
+                <!-- Formulario -->
+                <div class="col">
+                    <div>
+                        <input type="text" id="name" placeholder="Your name">
+                        <div id="name-error" class="error-message"></div>
+                    </div>
+                    <div>
+                        <input type="text" id="phone" placeholder="Phone Number">
+                        <div id="phone-error" class="error-message"></div>
+                    </div>
+                    <div>
+                        <input type="email" id="address" placeholder="Email-id">
+                        <div id="address-error" class="error-message"></div>
+                    </div>
+                    <div>
+                        <input type="text" id="subject" placeholder="Subject">
+                        <div id="subject-error" class="error-message"></div>
+                    </div>
+                    <div>
+                        <textarea id="message" cols="30" rows="4" placeholder="Message"></textarea>
+                        <div id="message-error" class="error-message"></div>
+                    </div>
+                    <button onclick="validateForm()">
+                        Send Message <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="./assets/map.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Anand, Gujarat, India
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                +91 96645 96323
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                abdprajapati090@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#home" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="network">
+            <a href="https://www.instagram.com/quantized.anshh/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/Anshuma66149166" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/anshuman-prajapati-442479261/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.youtube.com/@MysteryofMusic    " target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="mailto:abdprajapati090@gmail.com?subject=Your%20Subject&body=Your%20Message" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <div>
+            <p>Copyright © 2023 Anshuman Prajapati. All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </body>
 </html>
