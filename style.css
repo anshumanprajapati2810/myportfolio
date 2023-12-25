@@ -129,6 +129,9 @@ html{
 .home .content-banner .network .ldn:hover{
     background-color: rgb(0, 119, 181);
 }
+.home .content-banner .network .git:hover{
+    background-color: #2dba4e;
+}
 .aboutme{
     background-color: #1e2326;
     color: #fff;
@@ -674,6 +677,9 @@ footer .network .ldn:hover{
 }
 footer .network .mail:hover{
     background-color: #fbbc05;
+}
+footer .network .git:hover{
+    background-color: #2dba4e
 }
 
 /* section RESPONSIVE */
